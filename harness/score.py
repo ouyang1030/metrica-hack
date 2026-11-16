@@ -1,0 +1,132 @@
+"""Score methods on the off-game harness with the official metric.
+
+A method maps a match -- players, ball, slot_team, pitch: the cache.Atd fields plus the pitch --
+to one label per frame, the same contract mtah.pipeline.predict has on BAR-ATH. Each half is
+scored on its own by possession_metrics.evaluate(). A method's result is the mean over halves
+with a bootstrap interval; two methods are compared with a paired bootstrap over the same halves.
+
+    python -m harness.score            # the four published baselines, clean and degraded
+"""
+
+import numpy as np
+
+from harness import degrade, idsse
+from mtah import baseline
+from evaluation import possession_metrics as pm
+
+SEEDS = (0, 1, 2)
+N_BOOT = 2000
+METRICS = ("spell_f1_mean", "macro_f1")
+
+
+def score_halves(method, match):
+    """(n_halves, 2) [spellF1, macroF1] of one method on one match."""
+    return half_scores(match.labels, pm.label_codes(np.asarray(method(match))), match.halves)
+
+
+def half_scores(labels, pred, halves):
+    """(n_halves, 2) [spellF1, macroF1] of predicted codes against label codes."""
+    return np.array([[pm.evaluate(labels[a:b], pred[a:b])[key] for key in METRICS]
+                     for a, b in halves])
+
+
+def run(methods, matches=None, seeds=SEEDS):
+    """{name: (clean, degraded)} with one row per half; degraded rows average the seeds."""
+    clean = {name: [] for name in methods}
+    degraded = {name: [] for name in methods}
+    for match_id in matches or idsse.match_ids():
+        match = idsse.load(match_id)
+        noisy = [degrade.degrade(match, seed) for seed in seeds]
+        for name, method in methods.items():
+            clean[name].append(score_halves(method, match))
+            degraded[name].append(np.mean([score_halves(method, m) for m in noisy], axis=0))
+    return {name: (np.concatenate(clean[name]), np.concatenate(degraded[name]))
+            for name in methods}
+
+
+def spell_recall(labels, pred, halves, short_s=4.0, iou=pm.SPELL_IOU_HEADLINE):
+    """(2, 2) [[matched, total] of possessions shorter than short_s, [same] of the longer ones]."""
+    counts = np.zeros((2, 2), dtype=int)
+    for a, b in halves:
+        gt = pm.possession_spells(labels[a:b], [(0, b - a)])
+        overlaps = pm.spell_overlaps(gt, pm.possession_spells(pred[a:b], [(0, b - a)]))
+        matched = pm.matched_gt_flags(overlaps, len(gt), iou)
+        longer = np.array([stop - start >= short_s * pm.FPS for start, stop, _ in gt], dtype=int)
+        np.add.at(counts, (longer, 0), matched)
+        np.add.at(counts, (longer, 1), 1)
+    return counts
+
+
+BINS = (0.0, 2.0, 4.0, 10.0, np.inf)  # s, true possession lengths (outcomes)
+OUTCOMES = ("found", "merged", "split", "missed", "shifted")
+
+
+def _bin(frames):
+    return int(np.searchsorted(BINS, frames / pm.FPS, side="right")) - 1
+
+
+def outcomes(labels, pred, halves, seen):
+    """[(true length bin, outcome, ball seen)] per true possession (seen: the ball on at least
+    half of its frames, from the per-frame mask seen), and [(separator kind, length bin,
+    reproduced)] per separator of a merge; kind is "other" or "dead"."""
+    rows, separators = [], []
+    for a, b in halves:
+        truth = pm.possession_spells(labels[a:b], [(0, b - a)])
+        predicted = pm.possession_spells(pred[a:b], [(0, b - a)])
+        matched = pm.matched_gt_flags(pm.spell_overlaps(truth, predicted), len(truth),
+                                      pm.SPELL_IOU_HEADLINE)
+        for i, (start, stop, team) in enumerate(truth):
+            length = stop - start
+            covers = [(max(0, min(stop, q) - max(start, p)), p, q) for p, q, k in predicted
+                      if k == team and p < stop and q > start]
+            big = [(p, q) for c, p, q in covers if c >= length / 2]
+            if matched[i]:
+                outcome = "found"
+            elif big and any(j != i and k == team and min(q, t) - max(p, s) >= (t - s) / 2
+                             for p, q in big for j, (s, t, k) in enumerate(truth)):
+                outcome = "merged"
+            elif len(covers) >= 2:
+                outcome = "split"
+            elif not big:
+                outcome = "missed"
+            else:
+                outcome = "shifted"
+            rows.append((_bin(length), outcome, bool(seen[a + start:a + stop].mean() >= 0.5)))
+        segments = pm.segments(labels[a:b], [(0, b - a)])
+        for (_, _, before), (start, stop, kind), (_, _, after) in zip(segments, segments[1:],
+                                                                      segments[2:]):
+            if before == after and before in (pm.H, pm.A) and kind != before:
+                separators.append(("dead" if kind == pm.D else "other", _bin(stop - start),
+                                   bool(np.any(pred[a + start:a + stop] == kind))))
+    return rows, separators
+
+
+def interval(rows, seed=0):
+    """(mean, low, high) per column; the interval is the 5-95% bootstrap over rows (halves)."""
+    draws = np.random.default_rng(seed).integers(0, len(rows), (N_BOOT, len(rows)))
+    low, high = np.percentile(rows[draws].mean(axis=1), pm.BOOTSTRAP_PERCENTILES, axis=0)
+    return rows.mean(axis=0), low, high
+
+
+def table(results):
+    lines = ["{:<22} {:>27} {:>27}".format("", "clean spellF1 / macroF1",
+                                            "degraded spellF1 / macroF1")]
+    for name, (clean, degraded) in results.items():
+        cells = []
+        for rows in (clean, degraded):
+            mean, low, high = interval(rows)
+            cells.append("{:.3f} [{:.3f},{:.3f}] / {:.3f}".format(mean[0], low[0], high[0],
+                                                                   mean[1]))
+        lines.append("{:<22} {:>27} {:>27}".format(name, *cells))
+    return "\n".join(lines)
+
+
+def baselines():
+    def variant(window):
+        return lambda m: baseline.smooth(
+            baseline.nearest_player_codes(m.players, m.ball, m.slot_team, m.pitch), window)
+    return {name: variant(window) for name, window in baseline.VARIANTS}
+
+
+if __name__ == "__main__":
+    print(table(run(baselines())))

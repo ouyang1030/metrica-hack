@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1800 690">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fffaf4;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #f0c591;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: 1.6px;
+      }
+
+      .cls-4 {
+        fill: #edf3fc;
+      }
+
+      .cls-5 {
+        font-size: 15.4px;
+        letter-spacing: 0em;
+      }
+
+      .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23 {
+        isolation: isolate;
+      }
+
+      .cls-5, .cls-6, .cls-7, .cls-8, .cls-11, .cls-12, .cls-14, .cls-17, .cls-18, .cls-19, .cls-21, .cls-22, .cls-23 {
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .cls-5, .cls-6, .cls-11, .cls-24, .cls-23 {
+        fill: #325b99;
+      }
+
+      .cls-25 {
+        fill: #fff5e9;
+      }
+
+      .cls-6, .cls-17 {
+        font-size: 14.5px;
+        letter-spacing: 0em;
+      }
+
+      .cls-26 {
+        stroke-width: 1.7px;
+      }
+
+      .cls-26, .cls-27, .cls-28, .cls-29, .cls-30, .cls-31, .cls-32, .cls-2, .cls-33, .cls-34, .cls-35 {
+        fill: none;
+      }
+
+      .cls-26, .cls-27, .cls-28, .cls-30, .cls-31, .cls-32, .cls-2, .cls-33, .cls-34, .cls-35 {
+        stroke-linecap: round;
+      }
+
+      .cls-26, .cls-27, .cls-34 {
+        stroke: #e88b2b;
+      }
+
+      .cls-27, .cls-2, .cls-33 {
+        stroke-width: 1.5px;
+      }
+
+      .cls-7, .cls-8 {
+        fill: #9a5315;
+      }
+
+      .cls-7, .cls-8, .cls-11, .cls-18, .cls-19 {
+        font-size: 14.1px;
+      }
+
+      .cls-7, .cls-19 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-36 {
+        fill: #97a7ba;
+      }
+
+      .cls-9 {
+        font-size: 18px;
+      }
+
+      .cls-9, .cls-10, .cls-13, .cls-15 {
+        fill: #5b687b;
+      }
+
+      .cls-9, .cls-10, .cls-13, .cls-15, .cls-16 {
+        font-family: ArialMT, Arial;
+      }
+
+      .cls-10 {
+        font-size: 19.3px;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-28 {
+        stroke: #97a7ba;
+        stroke-width: 2.6px;
+      }
+
+      .cls-29, .cls-30 {
+        stroke-width: 2.2px;
+      }
+
+      .cls-29, .cls-30, .cls-31, .cls-32, .cls-37, .cls-38 {
+        stroke: #325b99;
+      }
+
+      .cls-12 {
+        font-size: 27.5px;
+      }
+
+      .cls-12, .cls-16, .cls-21, .cls-22 {
+        fill: #16253f;
+      }
+
+      .cls-31 {
+        stroke-width: 2.1px;
+      }
+
+      .cls-32, .cls-34, .cls-38 {
+        stroke-width: 2px;
+      }
+
+      .cls-39 {
+        fill: #f0f4f9;
+      }
+
+      .cls-13 {
+        font-size: 17.6px;
+      }
+
+      .cls-14 {
+        fill: #8895a6;
+        font-size: 12.5px;
+        letter-spacing: 0em;
+      }
+
+      .cls-40 {
+        fill: #fff0de;
+      }
+
+      .cls-41 {
+        fill: #ecf3fd;
+      }
+
+      .cls-3, .cls-33 {
+        stroke: #dce4ef;
+      }
+
+      .cls-3, .cls-37, .cls-38 {
+        fill: #fff;
+      }
+
+      .cls-42, .cls-17 {
+        fill: #e88b2b;
+      }
+
+      .cls-15 {
+        font-size: 21.5px;
+      }
+
+      .cls-37 {
+        stroke-width: 1.9px;
+      }
+
+      .cls-16 {
+        font-size: 19px;
+      }
+
+      .cls-34 {
+        stroke-linejoin: round;
+      }
+
+      .cls-18 {
+        letter-spacing: 0em;
+      }
+
+      .cls-18, .cls-19 {
+        fill: #315b95;
+      }
+
+      .cls-35 {
+        stroke: #e3e8f0;
+      }
+
+      .cls-20 {
+        fill: #dce4f0;
+        opacity: .4;
+      }
+
+      .cls-43 {
+        fill: #fafbfd;
+      }
+
+      .cls-21 {
+        font-size: 30px;
+      }
+
+      .cls-22 {
+        font-size: 46px;
+      }
+
+      .cls-23 {
+        font-size: 15.5px;
+        letter-spacing: .1em;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <g>
+    <g id="_图层_1" data-name="图层_1">
+      <rect class="cls-43" width="1800" height="690"/>
+      <path class="cls-24" d="M62.5,31h23c1.4,0,2.5,1.1,2.5,2.5h0c0,1.4-1.1,2.5-2.5,2.5h-23c-1.4,0-2.5-1.1-2.5-2.5h0c0-1.4,1.1-2.5,2.5-2.5Z"/>
+      <text class="cls-23" transform="translate(99 39)"><tspan x="0" y="0">XHS / INFERENCE PIPELINE</tspan></text>
+      <text class="cls-22" transform="translate(60 108)"><tspan x="0" y="0">From incomplete tracking to frame-level states</tspan></text>
+      <text class="cls-15" transform="translate(60 153)"><tspan x="0" y="0">Permutation-invariant features → two-stage boosted trees → input-output HMM</tspan></text>
+      <rect class="cls-41" x="1494" y="52" width="246" height="43" rx="21" ry="21"/>
+      <circle class="cls-24" cx="1518" cy="73.5" r="5.2"/>
+      <text class="cls-5" transform="translate(1534 80)"><tspan x="0" y="0">FRAME-LEVEL OUTPUT</tspan></text>
+      <line class="cls-28" x1="307" y1="352" x2="331" y2="352"/>
+      <polygon class="cls-36" points="331 352 323 346.9 323 357.1 331 352"/>
+      <line class="cls-28" x1="599" y1="352" x2="623" y2="352"/>
+      <polygon class="cls-36" points="623 352 615 346.9 615 357.1 623 352"/>
+      <line class="cls-28" x1="876" y1="352" x2="900" y2="352"/>
+      <polygon class="cls-36" points="900 352 892 346.9 892 357.1 900 352"/>
+      <line class="cls-28" x1="1158" y1="352" x2="1182" y2="352"/>
+      <polygon class="cls-36" points="1182 352 1174 346.9 1174 357.1 1182 352"/>
+      <line class="cls-28" x1="1460" y1="352" x2="1484" y2="352"/>
+      <polygon class="cls-36" points="1484 352 1476 346.9 1476 357.1 1484 352"/>
+      <rect class="cls-20" x="61" y="216" width="240" height="295" rx="16" ry="16"/>
+      <rect class="cls-3" x="60" y="210" width="240" height="295" rx="16" ry="16"/>
+      <path class="cls-24" d="M82,225h34c1.1,0,2,.9,2,2h0c0,1.1-.9,2-2,2h-34c-1.1,0-2-.9-2-2h0c0-1.1.9-2,2-2Z"/>
+      <text class="cls-6" transform="translate(80 259)"><tspan x="0" y="0">01 / INPUT</tspan></text>
+      <line class="cls-30" x1="257" y1="256" x2="272" y2="242"/>
+      <line class="cls-30" x1="272" y1="242" x2="279" y2="260"/>
+      <line class="cls-30" x1="257" y1="256" x2="279" y2="260"/>
+      <circle class="cls-38" cx="257" cy="256" r="4.3"/>
+      <circle class="cls-38" cx="272" cy="242" r="4.3"/>
+      <circle class="cls-38" cx="279" cy="260" r="4.3"/>
+      <text class="cls-12" transform="translate(80 301)"><tspan x="0" y="0">Tactical ATD</tspan></text>
+      <line class="cls-33" x1="80" y1="321" x2="280" y2="321"/>
+      <text class="cls-9" transform="translate(80 355)"><tspan x="0" y="0">46 anonymous track slots</tspan></text>
+      <text class="cls-10" transform="translate(80 382)"><tspan x="0" y="0">No player identities</tspan></text>
+      <text class="cls-10" transform="translate(80 409)"><tspan x="0" y="0">Ball missing in ~41%</tspan></text>
+      <text class="cls-10" transform="translate(80 436)"><tspan x="0" y="0">of frames</tspan></text>
+      <path class="cls-4" d="M95,459h122.2c8.3,0,15,6.7,15,15h0c0,8.3-6.7,15-15,15h-122.2c-8.3,0-15-6.7-15-15h0c0-8.3,6.7-15,15-15Z"/>
+      <text class="cls-19" transform="translate(94 479)"><tspan x="0" y="0">NO IDENTITIES</tspan></text>
+      <rect class="cls-20" x="343" y="216" width="250" height="295" rx="16" ry="16"/>
+      <rect class="cls-3" x="342" y="210" width="250" height="295" rx="16" ry="16"/>
+      <path class="cls-24" d="M364,225h34c1.1,0,2,.9,2,2h0c0,1.1-.9,2-2,2h-34c-1.1,0-2-.9-2-2h0c0-1.1.9-2,2-2Z"/>
+      <text class="cls-6" transform="translate(362 259)"><tspan x="0" y="0">02 / FEATURES</tspan></text>
+      <circle class="cls-24" cx="549" cy="240" r="2.7"/>
+      <circle class="cls-24" cx="549" cy="250" r="2.7"/>
+      <circle class="cls-24" cx="549" cy="260" r="2.7"/>
+      <circle class="cls-24" cx="559" cy="240" r="2.7"/>
+      <circle class="cls-24" cx="559" cy="250" r="2.7"/>
+      <circle class="cls-24" cx="559" cy="260" r="2.7"/>
+      <circle class="cls-24" cx="569" cy="240" r="2.7"/>
+      <circle class="cls-24" cx="569" cy="250" r="2.7"/>
+      <circle class="cls-24" cx="569" cy="260" r="2.7"/>
+      <text class="cls-21" transform="translate(362 301)"><tspan x="0" y="0">85 features</tspan></text>
+      <line class="cls-33" x1="362" y1="321" x2="572" y2="321"/>
+      <text class="cls-10" transform="translate(362 355)"><tspan x="0" y="0">Measured per team</tspan></text>
+      <text class="cls-10" transform="translate(362 382)"><tspan x="0" y="0">Distances · team shape</tspan></text>
+      <text class="cls-9" transform="translate(362 409)"><tspan x="0" y="0">Ball motion · missingness</tspan></text>
+      <path class="cls-4" d="M377,459h150.4c8.3,0,15,6.7,15,15h0c0,8.3-6.7,15-15,15h-150.4c-8.3,0-15-6.7-15-15h0c0-8.3,6.7-15,15-15Z"/>
+      <text class="cls-19" transform="translate(376 479)"><tspan x="0" y="0">ANY PLAYER ORDER</tspan></text>
+      <rect class="cls-20" x="635" y="216" width="235" height="295" rx="16" ry="16"/>
+      <rect class="cls-3" x="634" y="210" width="235" height="295" rx="16" ry="16"/>
+      <path class="cls-24" d="M656,225h34c1.1,0,2,.9,2,2h0c0,1.1-.9,2-2,2h-34c-1.1,0-2-.9-2-2h0c0-1.1.9-2,2-2Z"/>
+      <text class="cls-6" transform="translate(654 259)"><tspan x="0" y="0">03 / STAGE 1</tspan></text>
+      <line class="cls-31" x1="836" y1="239" x2="836" y2="247"/>
+      <line class="cls-31" x1="836" y1="247" x2="825" y2="257"/>
+      <line class="cls-31" x1="836" y1="247" x2="847" y2="257"/>
+      <circle class="cls-37" cx="836" cy="238" r="4.2"/>
+      <circle class="cls-37" cx="824" cy="259" r="4.2"/>
+      <circle class="cls-37" cx="848" cy="259" r="4.2"/>
+      <text class="cls-21" transform="translate(654 301)"><tspan x="0" y="0">Stage 1</tspan></text>
+      <line class="cls-33" x1="654" y1="321" x2="849" y2="321"/>
+      <text class="cls-10" transform="translate(654 355)"><tspan x="0" y="0">Boosted-tree estimates</tspan></text>
+      <text class="cls-10" transform="translate(654 382)"><tspan x="0" y="0">P(H, A, D)</tspan></text>
+      <text class="cls-13" transform="translate(654 409)"><tspan x="0" y="0">P(switch, stop, restart)</tspan></text>
+      <path class="cls-4" d="M669,459h103.4c8.3,0,15,6.7,15,15h0c0,8.3-6.7,15-15,15h-103.4c-8.3,0-15-6.7-15-15h0c0-8.3,6.7-15,15-15Z"/>
+      <text class="cls-18" transform="translate(668 479)"><tspan x="0" y="0">FRAME-LEVEL</tspan></text>
+      <rect class="cls-20" x="912" y="216" width="240" height="295" rx="16" ry="16"/>
+      <rect class="cls-3" x="911" y="210" width="240" height="295" rx="16" ry="16"/>
+      <path class="cls-24" d="M933,225h34c1.1,0,2,.9,2,2h0c0,1.1-.9,2-2,2h-34c-1.1,0-2-.9-2-2h0c0-1.1.9-2,2-2Z"/>
+      <text class="cls-6" transform="translate(931 259)"><tspan x="0" y="0">04 / STAGE 2</tspan></text>
+      <circle class="cls-29" cx="1118" cy="250" r="13"/>
+      <line class="cls-30" x1="1118" y1="250" x2="1118" y2="242"/>
+      <line class="cls-30" x1="1118" y1="250" x2="1125" y2="255"/>
+      <text class="cls-21" transform="translate(931 301)"><tspan x="0" y="0">Stage 2</tspan></text>
+      <line class="cls-33" x1="931" y1="321" x2="1131" y2="321"/>
+      <text class="cls-10" transform="translate(931 355)"><tspan x="0" y="0">Boosted trees on</tspan></text>
+      <text class="cls-10" transform="translate(931 382)"><tspan x="0" y="0">Stage 1 predictions</tspan></text>
+      <text class="cls-10" transform="translate(931 409)"><tspan x="0" y="0">across a ±8 s window</tspan></text>
+      <path class="cls-4" d="M946,459h150.4c8.3,0,15,6.7,15,15h0c0,8.3-6.7,15-15,15h-150.4c-8.3,0-15-6.7-15-15h0c0-8.3,6.7-15,15-15Z"/>
+      <text class="cls-18" transform="translate(945 479)"><tspan x="0" y="0">TEMPORAL CONTEXT</tspan></text>
+      <rect class="cls-20" x="1194" y="216" width="260" height="295" rx="16" ry="16"/>
+      <rect class="cls-3" x="1193" y="210" width="260" height="295" rx="16" ry="16"/>
+      <path class="cls-24" d="M1215,225h34c1.1,0,2,.9,2,2h0c0,1.1-.9,2-2,2h-34c-1.1,0-2-.9-2-2h0c0-1.1.9-2,2-2Z"/>
+      <text class="cls-6" transform="translate(1213 259)"><tspan x="0" y="0">05 / DECODING</tspan></text>
+      <line class="cls-32" x1="1407" y1="257" x2="1420" y2="245"/>
+      <line class="cls-32" x1="1420" y1="245" x2="1433" y2="255"/>
+      <circle class="cls-38" cx="1407" cy="257" r="4"/>
+      <circle class="cls-38" cx="1420" cy="245" r="4"/>
+      <circle class="cls-38" cx="1433" cy="255" r="4"/>
+      <text class="cls-21" transform="translate(1213 301)"><tspan x="0" y="0">Decoder</tspan></text>
+      <line class="cls-33" x1="1213" y1="321" x2="1433" y2="321"/>
+      <text class="cls-10" transform="translate(1213 355)"><tspan x="0" y="0">Input-output HMM</tspan></text>
+      <text class="cls-10" transform="translate(1213 382)"><tspan x="0" y="0">Tempered evidence</tspan></text>
+      <text class="cls-10" transform="translate(1213 409)"><tspan x="0" y="0">Viterbi state path</tspan></text>
+      <path class="cls-4" d="M1228,459h75c8.3,0,15,6.7,15,15h0c0,8.3-6.7,15-15,15h-75c-8.3,0-15-6.7-15-15h0c0-8.3,6.7-15,15-15Z"/>
+      <text class="cls-18" transform="translate(1227 479)"><tspan x="0" y="0">κ = 0.2</tspan></text>
+      <rect class="cls-20" x="1496" y="216" width="245" height="295" rx="16" ry="16"/>
+      <rect class="cls-1" x="1495" y="210" width="245" height="295" rx="16" ry="16"/>
+      <path class="cls-42" d="M1517,225h34c1.1,0,2,.9,2,2h0c0,1.1-.9,2-2,2h-34c-1.1,0-2-.9-2-2h0c0-1.1.9-2,2-2Z"/>
+      <text class="cls-17" transform="translate(1515 259)"><tspan x="0" y="0">06 / OUTPUT</tspan></text>
+      <polygon class="cls-34" points="1697 236 1710 236 1719 245 1719 264 1697 264 1697 236"/>
+      <line class="cls-27" x1="1710" y1="236" x2="1710" y2="245"/>
+      <line class="cls-27" x1="1710" y1="245" x2="1719" y2="245"/>
+      <line class="cls-26" x1="1702" y1="252" x2="1713" y2="252"/>
+      <line class="cls-26" x1="1702" y1="258" x2="1713" y2="258"/>
+      <text class="cls-21" transform="translate(1515 301)"><tspan x="0" y="0">XHS.csv</tspan></text>
+      <line class="cls-2" x1="1515" y1="321" x2="1720" y2="321"/>
+      <text class="cls-10" transform="translate(1515 355)"><tspan x="0" y="0">H / A / D every frame</tspan></text>
+      <text class="cls-10" transform="translate(1515 382)"><tspan x="0" y="0">Dead before 2nd-half</tspan></text>
+      <text class="cls-9" transform="translate(1515 409)"><tspan x="0" y="0">kickoff (Smart Tagging)</tspan></text>
+      <path class="cls-40" d="M1530,459h94c8.3,0,15,6.7,15,15h0c0,8.3-6.7,15-15,15h-94c-8.3,0-15-6.7-15-15h0c0-8.3,6.7-15,15-15Z"/>
+      <text class="cls-7" transform="translate(1529 479)"><tspan x="0" y="0">CSV OUTPUT</tspan></text>
+      <rect class="cls-39" x="60" y="548" width="1040" height="93" rx="14" ry="14"/>
+      <rect class="cls-24" x="60" y="548" width="5" height="93" rx="2" ry="2"/>
+      <text class="cls-11" transform="translate(82 576)"><tspan x="0" y="0">FITTED ON OTHER MATCHES ONLY</tspan></text>
+      <text class="cls-16" transform="translate(82 612)"><tspan x="0" y="0">7 DFL matches (open data), made ATD-like with a calibrated noise simulator.</tspan></text>
+      <rect class="cls-25" x="1117" y="548" width="623" height="93" rx="14" ry="14"/>
+      <rect class="cls-42" x="1117" y="548" width="5" height="93" rx="2" ry="2"/>
+      <text class="cls-8" transform="translate(1139 576)"><tspan x="0" y="0">NO BAR–ATH LABELS OR CHOICES</tspan></text>
+      <text class="cls-16" transform="translate(1139 612)"><tspan x="0" y="0">Only label-free noise statistics reach the simulator.</tspan></text>
+      <line class="cls-35" x1="60" y1="659" x2="1740" y2="659"/>
+      <text class="cls-14" transform="translate(60 681)"><tspan x="0" y="0">XHS · METHODS SCHEMATIC</tspan></text>
+      <text/>
+    </g>
+  </g>
+</svg>
